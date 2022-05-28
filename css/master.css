@@ -1,0 +1,260 @@
+#main{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.head_top{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    padding: 0 3%;
+    border-bottom: 1px solid #000;
+}
+.head_top>*{
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.head_top>figure,
+.head_top>section{
+    width: 15%;
+}
+.head_top>figure{
+    align-items: center;
+}
+.head_top>figure>img{
+    height: 50%;
+}
+.head_top>section{
+    justify-content: center;
+    align-items: center;
+}
+.head_top>section>span{
+    font-size: 35px;
+    color: rgb(50, 50, 50);
+    margin-right: 10px;
+}
+.head_top>section>a{
+    padding: 10px 17px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.head_top>div{
+    width: 25%;
+    align-items: center;
+}
+.head_top>div>form{
+    width: 80%;
+    height: 50%;
+    border: 1px solid rgb(103, 103, 103);
+    border-radius: 30px;
+    overflow:hidden;
+    position: relative;
+}
+.head_top>div>form>input[type=text]{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.head_top>div>form>label{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+    cursor: pointer;
+}
+.head_top>div>form>label::before,
+.head_top>div>form>label::after{
+    content: '';
+    position: absolute;
+    display: flex;
+}
+.head_top>div>form>label::before{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0;left: 0;
+    border: 1px solid black;
+}
+.head_top>div>form>label::after{
+    width: 15px;height: 2px;
+    background-color: black;
+    bottom: 8px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+.head_top>nav{
+    width: 45%;
+}
+.head_top>nav>ul{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: flex-end;
+}
+.head_top>nav>ul>li{
+    border: 1px solid white;
+    height: 100%;
+}
+.head_top>nav>ul>li>a{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding: 0 15px;
+    text-transform: capitalize;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.head_top>nav>ul>li>a::after{
+    content: '';
+    display: flex;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 12.5%;
+    bottom: 20px;
+    border-radius: 2px;
+    transition: .4s;
+}
+.head_top>nav>ul>li>a:hover::after{
+    width: 75%;
+}
+
+#test{
+    display: none;
+}
+
+/* end header */
+
+.slide{
+    width: 100%;
+}
+.slide>*{
+    min-height: 300px;
+    /* border: 1px solid red; */
+}
+.slide>section{
+    width: 55%;
+    background-image: url(../img/hero-shape.jpg);
+    justify-content: flex-end;
+    align-items: center;
+}
+.slide>section>section{
+    width: 70%;
+    min-height: 100px;
+    /* border: 1px solid white; */
+    flex-wrap: wrap;
+
+}
+.slide>section>section>*{
+    width: 100%;
+    color: rgb(238, 238, 238);
+}
+.slide>section>section>h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.slide>section>section>h3{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 25px 0;
+}
+.slide>section>section>form{
+    width: 100%;
+    height: 90px;
+    /* border: 3px solid red; */
+    position: relative;
+}
+.slide>section>section>form>label{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    right: -90px;
+    background-color: red;
+}
+.slide>section>section>form>input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+.slide>section>section>form>input[type=submit]{
+    display: none;
+}
+
+
+
+.slide>figure{
+    width: 45%;
+}
+.slide>figure>img{
+    width: 100%;
+}
+/* end slide */
+
+.courses{
+    width: 100%;
+    padding: 20px 10%;
+    flex-wrap: wrap;
+}
+.courses>*{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 15px;
+    min-height: 100px;
+}
+.courses>header{
+    flex-wrap: wrap;
+}
+.courses>header>*{
+    width: 100%;
+    text-align: center;
+}
+.courses>header>h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.courses>header>h4{
+    font-size: 1.5rem;
+    color: rgb(62, 62, 62);
+}
+.courses>section{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.courses>section>figure{
+    width: 250px;
+    height: 350px;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+}
+.courses>section>figure>*{
+    width: 100%;
+}
+.courses>section>figure>img{
+    height: 70%;
+    object-fit: cover;
+}
+.courses>section>figure>figcaption{
+    text-indent: 15px;
+}
+

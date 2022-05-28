@@ -1,0 +1,24 @@
+
+:is(header, main, footer) p:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* The above is equivalent to the following */
+  header p:hover,
+  main p:hover,
+  footer p:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* These are deprecated, but still necessary in some browsers: */
+:-moz-any(div, p) > em { /* ... */ }
+:-webkit-any(div, p) > em { /* ... */ }
+
+/* Has been replaced by :is() in CSS4, but still supported 
+by some browsers with experimental features enabled */
+:matches(div, p) > em { /* ... */ }
+
+/* Latest syntax */
+:is(div, p) > em { /* ... */ }
